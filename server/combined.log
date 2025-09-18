@@ -1,0 +1,3 @@
+{"environment":"development","level":"info","message":"Server running on port 5000","port":"5000","service":"skilltree-api","timestamp":"2025-09-15T20:16:34.020Z"}
+{"environment":"development","level":"info","message":"Server running on port 5001","port":"5001","service":"skilltree-api","timestamp":"2025-09-15T20:18:40.285Z"}
+{"environment":"development","level":"info","message":"Server running on port 5001","port":"5001","service":"skilltree-api","timestamp":"2025-09-15T20:32:07.142Z"}

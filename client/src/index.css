@@ -1,0 +1,123 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Import RPG fonts */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Cinzel:wght@400;500;600&display=swap');
+
+@layer base {
+  html {
+    color-scheme: dark;
+  }
+  
+  body {
+    @apply bg-background-primary text-text-primary font-rpg;
+    background-image: 
+      radial-gradient(circle at 25% 25%, rgba(59, 130, 246, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 75% 75%, rgba(139, 92, 246, 0.1) 0%, transparent 50%);
+  }
+  
+  * {
+    @apply border-surface-secondary;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-accent-primary hover:bg-accent-primary/80 text-white px-6 py-3 rounded-lg font-medium transition-all duration-200 shadow-lg hover:shadow-accent-primary/25;
+  }
+  
+  .btn-secondary {
+    @apply bg-surface-secondary hover:bg-surface-tertiary text-text-primary px-6 py-3 rounded-lg font-medium transition-all duration-200 border border-surface-tertiary;
+  }
+  
+  .card {
+    @apply bg-surface-primary border border-surface-secondary rounded-xl p-6 shadow-xl backdrop-blur-sm;
+  }
+  
+  .skill-node {
+    @apply relative rounded-full border-2 transition-all duration-300 cursor-pointer;
+  }
+  
+  .skill-node-locked {
+    @apply border-skill-locked bg-skill-locked/20 text-skill-locked;
+  }
+  
+  .skill-node-available {
+    @apply border-skill-available bg-skill-available/20 text-skill-available animate-glow;
+  }
+  
+  .skill-node-completed {
+    @apply border-skill-completed bg-skill-completed/20 text-skill-completed;
+  }
+  
+  .skill-node-recommended {
+    @apply border-skill-recommended bg-skill-recommended/20 text-skill-recommended animate-pulse;
+  }
+  
+  .connection-line {
+    @apply stroke-surface-tertiary stroke-2;
+  }
+  
+  .connection-line-active {
+    @apply stroke-accent-primary drop-shadow-lg;
+    stroke-width: 3;
+  }
+  
+  .connection-line-recommended {
+    @apply stroke-skill-recommended drop-shadow-lg animate-pulse;
+    stroke-width: 3;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-gradient-to-r from-accent-primary to-accent-secondary bg-clip-text text-transparent;
+  }
+  
+  .glass-effect {
+    @apply bg-white/5 backdrop-blur-md border border-white/10;
+  }
+  
+  .glow-effect {
+    @apply shadow-lg shadow-current/25;
+  }
+}
+
+/* React Flow overrides */
+.react-flow__viewport {
+  @apply bg-transparent;
+}
+
+.react-flow__controls {
+  @apply bg-surface-primary border border-surface-secondary rounded-lg shadow-xl;
+}
+
+.react-flow__controls button {
+  @apply bg-transparent border-surface-secondary text-text-primary hover:bg-surface-secondary;
+}
+
+.react-flow__minimap {
+  @apply bg-surface-primary border border-surface-secondary rounded-lg;
+}
+
+.react-flow__edge-path {
+  @apply stroke-surface-tertiary;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  @apply w-2;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-surface-primary;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-surface-tertiary rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-accent-primary;
+}

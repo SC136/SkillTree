@@ -10,6 +10,7 @@ import { authRoutes } from './routes/auth';
 import { userRoutes } from './routes/user';
 import { skillTreeRoutes } from './routes/skillTree';
 import { aiRoutes } from './routes/ai';
+import questionnaireRoutes from './routes/questionnaire';
 
 // Load environment variables
 dotenv.config();
@@ -70,6 +71,7 @@ app.use('/api/auth', authRoutes);
 app.use('/api/user', userRoutes);
 app.use('/api/skill-tree', skillTreeRoutes);
 app.use('/api/ai', aiRoutes);
+app.use('/api/questionnaire', questionnaireRoutes);
 
 // 404 handler
 app.use('*', (req, res) => {

@@ -17,6 +17,8 @@ export interface UserProfile {
   careerGoals: string[];
   location?: string;
   age?: number;
+  hasCompletedQuestionnaire?: boolean;
+  personalizedSkillTree?: any; // Will be PersonalizedSkillTree type
 }
 
 export interface UserProgress {

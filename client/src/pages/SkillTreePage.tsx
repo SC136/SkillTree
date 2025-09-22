@@ -174,7 +174,7 @@ export const SkillTreePage: React.FC = () => {
           maxZoom={2}
         >
           <Background 
-            variant="dots" 
+            variant={'dots' as any} 
             gap={20} 
             size={2}
             className="opacity-20"

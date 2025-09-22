@@ -1,3 +1,7 @@
 {"environment":"development","level":"info","message":"Server running on port 5000","port":"5000","service":"skilltree-api","timestamp":"2025-09-15T20:16:34.020Z"}
 {"environment":"development","level":"info","message":"Server running on port 5001","port":"5001","service":"skilltree-api","timestamp":"2025-09-15T20:18:40.285Z"}
 {"environment":"development","level":"info","message":"Server running on port 5001","port":"5001","service":"skilltree-api","timestamp":"2025-09-15T20:32:07.142Z"}
+{"environment":"development","level":"info","message":"Server running on port 5001","port":"5001","service":"skilltree-api","timestamp":"2025-09-21T18:25:07.062Z"}
+{"environment":"development","level":"info","message":"Server running on port 5001","port":"5001","service":"skilltree-api","timestamp":"2025-09-21T18:37:16.563Z"}
+{"ip":"::1","level":"info","message":"POST /api/questionnaire/generate-skill-tree","service":"skilltree-api","timestamp":"2025-09-22T18:32:43.478Z","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36 Edg/140.0.0.0"}
+{"environment":"development","level":"info","message":"Server running on port 5001","port":"5001","service":"skilltree-api","timestamp":"2025-09-22T18:35:05.607Z"}
